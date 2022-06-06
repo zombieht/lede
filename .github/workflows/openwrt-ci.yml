@@ -95,6 +95,7 @@ jobs:
           CONFIG_PACKAGE_luci-app-mosdns=y
           CONFIG_PACKAGE_luci-app-qos=y
           CONFIG_PACKAGE_luci-app-webadmin=y
+          CONFIG_PACKAGE_luci-app-advanced=y
           EOF
           # 设置固件大小:
           cat >> .config <<EOF
