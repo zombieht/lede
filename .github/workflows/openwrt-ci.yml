@@ -95,12 +95,11 @@ jobs:
           CONFIG_PACKAGE_luci-app-qos=y
           CONFIG_PACKAGE_luci-app-webadmin=y
           CONFIG_PACKAGE_luci-app-netdata=y
-          CONFIG_PACKAGE_luci-app-rebootschedule=y
           EOF
           # 设置固件大小:
           cat >> .config <<EOF
           CONFIG_TARGET_KERNEL_PARTSIZE=32
-          CONFIG_TARGET_ROOTFS_PARTSIZE=256
+          CONFIG_TARGET_ROOTFS_PARTSIZE=400
           EOF
           #取消插件
           cat >> .config <<EOF
@@ -108,6 +107,7 @@ jobs:
           # CONFIG_PACKAGE_luci-app-adbyby-plus is not set
           # CONFIG_PACKAGE_luci-app-unblockmusic is not set
           # CONFIG_PACKAGE_luci-app-xlnetacc is not set
+          # CONFIG_VMDK_IMAGES is not set
           EOF
           #
           # ===============================================================
