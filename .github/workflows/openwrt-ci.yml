@@ -116,7 +116,6 @@ jobs:
           # CONFIG_VMDK_IMAGES is not set
           # CONFIG_PACKAGE_adguardhome is not set
           # CONFIG_PACKAGE_luci-app-adguardhome_INCLUDE_binary is not set
-          # CONFIG_PACKAGE_adguardhome is not set
           EOF
           #
           # ===============================================================
