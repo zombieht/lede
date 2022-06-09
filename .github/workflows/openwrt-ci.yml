@@ -125,8 +125,7 @@ jobs:
 
       - name: Load custom configuration
         run: |
-          [ -e files ] && mv files openwrt/files
-          [ -e .config ] && mv .config openwrt/.config
+          mv /config/.config lede/.config
 
       - name: Make download
         run: |
