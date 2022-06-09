@@ -125,7 +125,7 @@ jobs:
 
       - name: Load custom configuration
         run: |
-          mv /config/.config lede/.config
+          mv config/.config lede/.config
 
       - name: Make download
         run: |
