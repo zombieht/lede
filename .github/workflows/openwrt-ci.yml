@@ -123,6 +123,10 @@ jobs:
       #     sed -i 's/^[ \t]*//g' ./.config
       #     make defconfig
 
+      - name: Load custom configuration
+        run: |
+          sed -i 's/^[ \t]*//g' ./.config
+
       - name: Make download
         run: |
           make download -j8
