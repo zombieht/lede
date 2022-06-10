@@ -98,6 +98,7 @@ jobs:
           CONFIG_PACKAGE_luci-app-qos=y
           CONFIG_PACKAGE_luci-app-webadmin=y
           CONFIG_PACKAGE_luci-app-advanced=y
+          CONFIG_PACKAGE_luci-app-passwall2=y
           EOF
           # 设置固件大小:
           cat >> .config <<EOF
@@ -172,3 +173,9 @@ jobs:
           file: ./artifact/firmware/*
           tag: ${{ github.ref }}
           file_glob: true
+
+      - name: Delete workflow runs
+        uses: GitRML/delete-workflow-runs@main
+        with:
+          retain_days: 1
+          keep_minimum_runs: 3
