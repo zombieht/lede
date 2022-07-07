@@ -86,6 +86,7 @@ jobs:
           CONFIG_TARGET_x86_64_Generic=y
           CONFIG_GRUB_IMAGES=y
           CONFIG_TARGET_IMAGES_GZIP=y
+          CONFIG_PACKAGE_luci-app-passwall2=y
           CONFIG_PACKAGE_luci-app-ssr-plus=y
           CONFIG_PACKAGE_luci-app-adguardhome=y
           CONFIG_PACKAGE_luci-theme-argonne=y
